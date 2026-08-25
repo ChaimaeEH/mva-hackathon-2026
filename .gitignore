@@ -34,3 +34,5 @@ __pycache__/
 
 # Local pipeline scripts
 scripts/
+reproducibility/config.env
+work/
