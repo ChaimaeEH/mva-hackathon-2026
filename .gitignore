@@ -31,3 +31,6 @@ references/
 *.temp
 __pycache__/
 .DS_Store
+
+# Local pipeline scripts
+scripts/
