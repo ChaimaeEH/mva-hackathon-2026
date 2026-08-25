@@ -86,7 +86,13 @@ The two variants are candidate compound heterozygotes, but a recessive compound-
 
 ## Reproducibility
 
-- Exomiser configuration: `outputs/13_exomiser/config/WGS_EX2312012.exome-analysis.yml`
-- Ranked and annotated results: `outputs/13_exomiser/clinical_annotations/WGS_EX2312012_exomiser.variants.annotated.constraint411.tsv`
-- Submission-generation script: `scripts/create_track1_BUB1B_submission.sh`
-- First prediction file: `submissions/elhoujja_bub1b_compound_het.tsv`
+The public repository contains a portable, sequentially numbered workflow under `reproducibility/`. Machine-specific paths are supplied through a local `config.env`, created from `reproducibility/config.example.env`; the populated configuration is excluded from version control.
+
+- Project and methods overview: `README.md`
+- Portable workflow: `reproducibility/01_prepare_vcf.sh` through `reproducibility/07_create_submission.sh`
+- Example configuration: `reproducibility/config.example.env`
+- Complete sequential runner: `reproducibility/run_all.sh`
+- Submission-generation step: `reproducibility/07_create_submission.sh`
+- First prediction file: `submissions/model1_matcha_hpo_variants_top.csv`
+
+For a configured local run, normalized VCFs, generated Exomiser configurations, ranked results and annotated tables are written beneath `work/`. These patient-level and potentially large intermediate files, along with the controlled source VCF, are intentionally excluded from the public repository. The published scripts and example configuration describe how to regenerate them for an authorized user with access to the required input data and licensed annotation resources.
