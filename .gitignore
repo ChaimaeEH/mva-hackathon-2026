@@ -1,0 +1,33 @@
+# Controlled genomic data
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bcf
+*.bam
+*.bai
+*.cram
+*.crai
+
+# Analysis outputs and logs
+outputs/
+logs/
+*.out
+*.err
+
+# Reference and annotation databases
+databases/
+references/
+*.fa
+*.fasta
+*.fai
+*.dict
+
+# Temporary files
+*.tmp
+*.temp
+__pycache__/
+.DS_Store
