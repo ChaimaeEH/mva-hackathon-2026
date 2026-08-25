@@ -45,12 +45,30 @@ The initial Exomiser frequency filter allowed variants up to 2% so that plausibl
 
 Exomiser ranked **BUB1B** as the top gene under an autosomal-recessive model. Two heterozygous BUB1B variants contributed to this result:
 
-| GRCh38 variant | Protein consequence | Exomiser variant score | gnomAD v4.1 exome AF | Population-max AF | Rarity tier |
-|---|---|---:|---:|---:|---|
-| `chr15:40209701 T>G` | `p.(Leu737*)` stop-gain | 1.0000 | 7.867 × 10^-5 | 9.982 × 10^-5 | Tier 1 |
-| `chr15:40220612 T>G` | `p.(Asn1002Lys)` missense | 0.9229 | 6.841 × 10^-7 | 8.993 × 10^-7 | Tier 1 |
+| Feature | `p.(Leu737*)` | `p.(Asn1002Lys)` |
+|---|---|---|
+| GRCh38 variant | `chr15:40209701 T>G` | `chr15:40220612 T>G` |
+| Genotype | Heterozygous (`0/1`) | Heterozygous (`0/1`) |
+| Molecular consequence | Stop-gain; predicted loss of function | Missense substitution |
+| Exomiser variant score | 1.0000 | 0.9229 |
+| Exomiser ACMG assessment | Pathogenic | Uncertain significance (VUS) |
+| ClinVar status | Pathogenic/Likely pathogenic; Variation ID 533901; two-star review status | No matching ClinVar record in the annotation reviewed |
+| gnomAD v4.1 exome AF | 7.867 × 10^-5 | 6.841 × 10^-7 |
+| gnomAD v4.1 population-max AF | 9.982 × 10^-5 | 8.993 × 10^-7 |
+| Rarity tier | Tier 1 | Tier 1 |
+| Selected prediction evidence | Established loss-of-function mechanism and clinical classification | Extreme rarity plus supportive computational evidence |
 
 Under the recessive model, BUB1B received an Exomiser combined gene score of `0.9778` and rank 1. The pair was compelling because both variants are heterozygous, affect the same gene, are extremely rare by gnomAD v4.1 population-max frequency, and include a predicted loss-of-function stop-gain allele. In addition, BUB1B is a strong biological candidate for a phenotype involving mosaic variegated aneuploidy.
+
+## ClinVar and pathogenicity review
+
+We reviewed the candidates against ClinVar and the additional clinical/pathogenicity annotations in the pipeline. The `p.(Leu737*)` variant has a current ClinVar aggregate germline classification of **Pathogenic/Likely pathogenic**, based on two submissions with criteria provided and no conflicts. The condition-specific ClinVar record for mosaic variegated aneuploidy syndrome 1 is Pathogenic. This is consistent with the expected effect of a premature stop codon in a gene for which loss of function is an established disease mechanism. The record is [ClinVar Variation ID 533901](https://www.ncbi.nlm.nih.gov/clinvar/variation/533901/).
+
+The `p.(Asn1002Lys)` variant was assessed as **uncertain significance (VUS)** by Exomiser's ACMG module (`PM2_Supporting`, `PP4_Moderate`, `BP1`). A matching ClinVar record was not present in the annotation used for this analysis, and a direct ClinVar search did not identify one at the time of report preparation. It is therefore more precise to describe this allele as an **Exomiser-classified VUS**, rather than a ClinVar-classified VUS. Its evidence includes an AlphaMissense score of `0.9229`, MVP score of approximately `0.852`, ClinPred score of approximately `0.989` with a damaging prediction, and extreme rarity. REVEL was more moderate at `0.472`, illustrating that computational predictors do not agree completely.
+
+These classifications are complementary rather than equivalent. The pathogenic stop-gain allele provides strong evidence for one affected BUB1B copy. The missense VUS is a credible candidate for the second affected copy because of its rarity, phenotype/gene match, and several damaging predictions, but those observations do not independently establish pathogenicity. Under a recessive model, the pair becomes compelling only if the missense allele truly impairs BUB1B function and the two alleles are in trans.
+
+One further caveat is that the ClinVar submitter comment for `p.(Leu737*)` notes that population-frequency metrics at this position may be affected by poor gnomAD data quality. We therefore used frequency as supporting evidence, not as the sole basis for pathogenicity, and retained the stronger consequence, clinical-classification, inheritance, and phenotype evidence.
 
 ## First-submission decision
 

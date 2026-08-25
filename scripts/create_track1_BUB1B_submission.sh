@@ -5,7 +5,8 @@ set -euo pipefail
 PROJECT="/work/gr-fe/share/mva-challenge"
 VCF="/work/gr-fe/databases/mva-challenge-data/WGS_EX2312012_HGWCNDSX7.vcf.gz"
 BCFTOOLS="/work/gr-fe/elhoujja/tools/bcftools/bin/bcftools"
-PROBAND_ID="WGS_EX2312012"
+# The challenge submission identifier differs from the sample name in the VCF.
+PROBAND_ID="PROBAND01"
 TEAM_NAME="${1:-elhoujja}"
 OUTPUT_DIR="${PROJECT}/submissions"
 OUTPUT_FILE="${OUTPUT_DIR}/${TEAM_NAME}_bub1b_compound_het.tsv"

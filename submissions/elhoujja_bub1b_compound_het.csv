@@ -1,2 +1,0 @@
-proband_id,chrom_1,pos_1,ref_1,alt_1,chrom_2,pos_2,ref_2,alt_2,epcr,finding_type,notes
-WGS_EX2312012,chr15,40209701,T,G,chr15,40220612,T,G,1,primary,Top-ranked BUB1B recessive pair: p.Leu737* stop-gain plus p.Asn1002Lys missense; both heterozygous and extremely rare. Read-backed cis/trans phase is being evaluated.
