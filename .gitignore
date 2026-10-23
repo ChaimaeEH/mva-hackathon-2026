@@ -36,3 +36,7 @@ __pycache__/
 scripts/
 reproducibility/config.env
 work/
+
+# Large downloaded reference data
+track1/resources/gnomad/*.bgz
+track1/resources/gnomad/*.tbi

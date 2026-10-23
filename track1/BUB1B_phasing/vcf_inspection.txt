@@ -1,0 +1,5 @@
+VCF: /work/gr-fe/databases/mva-challenge-data/WGS_EX2312012_HGWCNDSX7.vcf.gz
+Sample: WGS_EX2312012
+PS header present: no
+Conclusion from supplied VCF: PHASING UNRESOLVED
+Reason: both targets are unphased 0/1 and have no PGT/PID phase set.
